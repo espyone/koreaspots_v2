@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>My Project</title>
+</head>
+<body>
+  <div class="screen_01" id="screen_01">
+    <h1 class="s1_h2">possible korean spots of interest</h1>
+    <h1 class="s1_h1">Choose A Province</h1>
+    <div class="s1_selection-container">
+      <select id="province-select">
+        <option value="choose" placeholder="choose"></option>
+        <option value="all">ALL</option>
+        <option value="gyeonggi">gyeonggi</option>
+        <option value="gangwon">gangwon</option>
+        <option value="chungbuk">chungbuk</option>
+        <option value="gyeongbuk">gyeongbuk</option>
+        <option value="gyeongnam">gyeongnam</option>
+        <option value="jeonnam">jeonnam</option>
+        <option value="jeonbuk">jeonbuk</option>
+        <option value="chungnam">chungnam</option>
+      </select>
+    </div>
+  </div>
+  <div class="screen_02" id="screen_02">
+    <h1 class="s2_h1">Choose A Category</h1>
+    <div class="s2_select-container">
+    <label for="temples">
+      <br>Buddhist Temples
+      <input type="checkbox" class="checkbox" value="yes" name="temples" id="temples"></label>
+
+    <label for="outdoors"><br>Outdoor Attractions
+      <input type="checkbox" class="checkbox" value="" name="outdoors" id="outdoors">
+    </label>
+    <label for="skateparks"><br>Skate Parks
+      <input type="checkbox" class="checkbox" value="yes" name="skateparks" id="skateparks">
+    </label>
+    <label for="zoosaquariums"><br>Zoos and Aquariums
+      <input type="checkbox" class="checkbox" value="yes" name="zoosaquariums" id="zoosaquariums">
+    </label>
+    <label for="artvenues"><br>Art Venues
+      <input type="checkbox" class="checkbox" value="yes" name="artvenues" id="artvenues">
+    </label>
+    <label for="musicvenues"><br>Music Venues
+      <input type="checkbox" class="checkbox" value="yes" name="musicvenues" id="musicvenues">
+    </label>
+    <label for="skatshops"><br>Skate Shops
+      <input type="checkbox" class="checkbox" value="yes" name="skateshops" id="skateshops">
+    </label>
+    <label for="amusementparks"><br>Amusement Parks + VR arcades<input type="checkbox" class="checkbox" value="yes" name="amusementparks" id="amusementparks"></label>
+  
+    </div>
+    <button class="submit" id="submit">submit</button>
+    <button class="return" id="return">go back</button>
+
+  </div>
+
+
+<div class="screen_03" id="screen_03">
+  <div class="venue-results-container">
+    <div class="templesdiv venuediv"></div>
+    <div class="templesdivtally venuedivtally"></div>
+
+    <div class="outdoorsdiv venuediv"></div>
+    <div class="outdoorsdivtally venuedivtally"></div>
+
+    <div class="skateparksdiv venuediv"></div>
+    <div class="skateparksdivtally venuedivtally"></div>
+
+    <div class="skateshopsdiv venuediv"></div>
+    <div class="skateshopsdivtally venuedivtally"></div>
+
+    <div class="artvenuesdiv venuediv"></div>
+    <div class="artvenuesdivtally venuedivtally"></div>
+
+    <div class="amusementparksdiv venuediv"></div>
+    <div class="amusementparksdivtally venuedivtally"></div>
+
+    <div class="musicvenuesdiv venuediv"></div>
+    <div class="musicvenuesdivtally venuedivtally"></div>
+ 
+    <div class="zoosaquariumsdiv venuediv"></div>
+    <div class="zoosaquariumsdivtally venuedivtally"></div>
+  </div>
+  <button class="return" id="return">go back</button>
+
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
