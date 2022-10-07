@@ -127,7 +127,7 @@ if (cat.checked = true) {
         // console.log(current)
          if (prov === current || prov === 'all') {
         passvar.classList.add('hi')
-        listText = `<p class='list'><span class='venuetitle'><a href='${filter[j].link}' target="_blank" style="text-decoration:none;color:white;">${filter[j].venue}</a></span><span class='provincetitle'>${filter[j].province}</span> <span class='citytitle'>${filter[j].city}</span></p>`
+        listText = `<p class='list'><span class='citytitle'><a href='${filter[j].link}' target="_blank" style="text-decoration:none;color:black;">${filter[j].city}</a></span><span class='venuetitle'>${filter[j].venue}</span> <span class='provincetitle'>${filter[j].province}</span></p>`
         passvar.innerHTML += listText
         results++
         passvar2.innerHTML = results

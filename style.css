@@ -72,6 +72,8 @@ body {
     overflow:hidden;
     align-items:center;
     top:0;
+    line-height:20px;
+    font-size:11px;
     margin:0;
     color:white;
     background-color:rgb(74, 68, 186);
@@ -98,7 +100,7 @@ body {
 }
 .submit{
     position: absolute;
-    width:220px;
+    width:200px;
     top:72%;
     height:30px;
     border:0;
@@ -152,7 +154,7 @@ body {
 }
 .venuedivtally {
     position: absolute;
-    right:.2%;
+    right:2.09%;
     width:14%;
     height:8vh;
     font-family:Lato;
@@ -210,30 +212,32 @@ body {
 }
 .screen_03 .return {
     top:15px;
-    left:350px;
+    left:300px;
     z-index:30;
 }
 p.list {
     display:flex;
 }
 span.venuetitle {
-    font-size:16px;
+    font-size:10px;
     padding:0 5px;
-    border-radius:5px 0 0 5px;
-    line-height: 43px;
+    border-radius:0px 0 0 0px;
+    line-height: 20px;
     background-color: blueviolet;
     color:#fff;
 }
 span.citytitle{
-    font-size:12px;
+    font-size:9px;
     background-color: yellow;
-    line-height: 25px;;
-    padding:5px;
-    border-radius:0 5px 5px 0;
+    line-height: 20px;;
+    padding:0 5px 0 10px;
+    border-radius:5px 0px 0px 5px;
 }
 span.provincetitle {
-    font-size:8px;
+    font-size:12px;
     background-color: bisque;
-    line-height: 40px;
+    line-height: 20px;
+    border-radius:0 5px 5px 0px;
+    padding:0 10px 0 5px;
 }
 
