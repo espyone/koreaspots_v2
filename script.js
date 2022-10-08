@@ -114,7 +114,6 @@ function listingScreen(a,b) {
     a.style.transform = "translateY(-150%)"
     b.style.transition = "transform 1.2s"
     b.style.transform = "translateX(0%)"
-
 }
 
 function listVenues(cat, filter, prov, passvar, passvar2) {
@@ -181,14 +180,21 @@ amusementparks.addEventListener('click', (e) => {
 
 provinceSelection.addEventListener('change', (e) => {
     let provinceResult = e.target.value
+
     categoryScreen(screenOne, screenTwo, provinceResult)
+   
 })
 
-goBack.addEventListener('click', () => {
-    listingScreen(screenTwo, screenOne)})
+// goBack.addEventListener('click', () => {
+//     option = document.querySelector('select')
+//     option.value = ''
+//     listingScreen(screenTwo, screenOne)
 
-goBack_Three.addEventListener('click', () => {
-listingScreen(screenThree, screenTwo)})
+// })
+
+// goBack_Three.addEventListener('click', () => {
+
+// categoryScreen(screenThree, screenTwo)})
 
 submit.addEventListener('click', () => {
     listingScreen(screenTwo, screenThree)})
