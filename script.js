@@ -124,10 +124,9 @@ if (cat.checked = true) {
     // console.log(filter[0].city.toLowerCase())
     for (let j in filter) {
         current = filter[j].province.toLowerCase()
-        // console.log(current)
          if (prov === current || prov === 'all') {
         passvar.classList.add('hi')
-        listText = `<p class='list'><span class='citytitle'><a href='${filter[j].link}' target="_blank" style="text-decoration:none;color:black;">${filter[j].city}</a></span><span class='venuetitle'>${filter[j].venue}</span> <span class='provincetitle'>${filter[j].province}</span></p>`
+        listText = `<p class='list'><span class='citytitle'>${filter[j].city}</span><span class='venuetitle'><a class="linky" href='${filter[j].link}' target="_blank" style="text-decoration:none;color:white;">${filter[j].venue}</a></span> <span class='provincetitle'>${filter[j].province}</span></p>`
         passvar.innerHTML += listText
         results++
         passvar2.innerHTML = results
